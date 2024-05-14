@@ -3,11 +3,18 @@
 
 :Utilizator: as user
 
-user ---> (AcceptCookies) : Introduce URL
-(AcceptCookies) ----> (Landing Page) : Accepta Cookies
+user ---> (afiseazaLanding Page) : Introduce URL pentru prima data
 
-user --> (menu) : Click pe menu
-(menu) --> (subcategoriemenu) : hovermouse pe item din listaMenu
+(afiseazaLanding Page) ---> (AcceptCookies) : accepta sau respinge cookies
+
+
+user --> (afiseaza meniul va glisa in jos) : Click pe menu
+
+user --> (afiseaza subcategorie meniu) : hovermouse pe item din listaMenu
+
+user --> (se activeaza caseta search)
+
+user --> (app verifica formatul sirului de caractere care trebuie sa aiba urmatorul format xxxxxxxx@gmail.com) : tasteaza in casuta de email
 
 
 
