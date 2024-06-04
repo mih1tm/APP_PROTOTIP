@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+actor as user
+
+user --> [Creeaza Proiect Nou]
+[Creeaza Proiect Nou] --> [Stabilieste Materialele si culorile folosite in proiect]
+[Stabilieste Materialele si culorile folosite in proiect] -right-> (Selecteaza culori)
+(Selecteaza culori) --> (selectare tipul materialelor )
+
+(Selecteaza culori) -right-> (apasa butonul SALVARE)
+
+(apasa butonul SALVARE) ---> [Stabilieste Materialele si culorile folosite in proiect]
+[Stabilieste Materialele si culorile folosite in proiect] -->[s]
+
+@enduml

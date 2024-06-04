@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class utilizatorul
+class browser
+class landingpage
+class zona
+class numele_aplicatiei
+class zona_prezentare
+
+
+@enduml

@@ -1,0 +1,87 @@
+@startuml
+'https://plantuml.com/class-diagram'
+
+class corp_var_1
+class laterala_stanga
+class laterala_dreapta
+class fund_corp
+class capac
+class polita
+class perete_intermediar
+class usa
+class spate_corp
+
+corp_var_1 -- laterala_stanga
+corp_var_1 -- laterala_dreapta
+corp_var_1 -- fund_corp
+corp_var_1 -- capac
+corp_var_1 -- polita
+corp_var_1 -- perete_intermediar
+corp_var_1 -- usa
+corp_var_1 -- spate_corp
+
+
+
+class corp_var_1
+{
+
+laterala_stanga
+laterala_dreapta
+fund_corp
+capac
+polita
+perete_intermediar
+usa
+spate_corp
+}
+
+class laterala_stanga
+{
+lungime
+latime
+grosime
+culoare
+status---exista/nu_exista
+}
+
+class laterala_dreapta
+{
+lungime
+latime
+grosime
+culoare
+status---exista/nu_exista
+}
+
+class fund_corp
+{
+lungime
+latime
+grosime
+culoare
+status---exista/nu_exista
+}
+
+class capac
+{
+
+}
+class polita
+{
+
+}
+class perete_intermediar
+{
+
+}
+class usa
+{
+
+}
+class spate_corp
+{
+
+}
+
+
+@enduml
