@@ -18,15 +18,30 @@ class caseta_search
 class buton_login
 class buton_quickbuild
 
-landingpage "1" *-- "1..*" chenar_functionalitati_prezentare
-landingpage ...left... fereastra_cookie
-landingpage "1" *-- "1" zona_numele_aplicatiei
-landingpage "1" *--- "1" zona_prezentare
-landingpage "1" *---- "1" zona_descriere
-landingpage "1" *-- "1" menu
+class fereastra_login
+class caseta_username
+class caseta_password
+class buton_login_cont
+
+landingpage "1" *--- "1..*" chenar_functionalitati_prezentare
+landingpage .up. fereastra_cookie
+landingpage "1" *-down- "1" zona_numele_aplicatiei
+landingpage "1" *-down- "1" zona_prezentare
+landingpage "1" *-down- "1" zona_descriere
+landingpage "1" *-left- "1" menu
+landingpage "1" *--- "1" caseta_search
+landingpage "1" *-- "1" buton_quickbuild
+landingpage "1" *-- "1" buton_login
+
+menu "1" *-- "1" buton_menu
 
 menu "1" *-- "1..*" categorie_menu
 categorie_menu "1" *-- "1..*" mini_menu
+
+fereastra_login -- caseta_password
+fereastra_login -- caseta_username
+fereastra_login -- buton_login_cont
+
 
 class landingpage
 {
@@ -101,12 +116,14 @@ expand_when_clicked()
 
 class caseta_search
 {
+status
 length
 height
 text
 search_symbol
 accept_input()
 search_in_app()
+afisare_fereastra_rezultate()
 }
 
 class chenar_functionalitati_prezentare
@@ -115,5 +132,45 @@ picture
 label
 }
 
+class buton_login
+{
+length
+height
+picture
+afiseaza_fereastra_login()
+}
 
+class caseta_username
+{
+length
+height
+label
+accept_input()
+check_username()
+}
+
+class caseta_password
+{
+length
+height
+label
+accept_input()
+check_password()
+}
+
+class buton_login_cont
+{
+length
+height
+text
+set_app_logedin()
+}
+
+class buton_quickbuild
+{
+length
+height
+label
+
+}
 @enduml
