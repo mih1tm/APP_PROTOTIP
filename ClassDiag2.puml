@@ -4,9 +4,116 @@
 class utilizatorul
 class browser
 class landingpage
-class zona
-class numele_aplicatiei
+class zona_numele_aplicatiei
 class zona_prezentare
+class zona_descriere
+class fereastra_cookie
+class chenar_functionalitati_prezentare
+
+class menu
+class categorie_menu
+class mini_menu
+
+class caseta_search
+class buton_login
+class buton_quickbuild
+
+landingpage "1" *-- "1..*" chenar_functionalitati_prezentare
+landingpage ...left... fereastra_cookie
+landingpage "1" *-- "1" zona_numele_aplicatiei
+landingpage "1" *--- "1" zona_prezentare
+landingpage "1" *---- "1" zona_descriere
+landingpage "1" *-- "1" menu
+
+menu "1" *-- "1..*" categorie_menu
+categorie_menu "1" *-- "1..*" mini_menu
+
+class landingpage
+{
+zona_numele_aplicatiei
+zona_prezentare
+zona_descriere
+}
+
+class zona_numele_aplicatiei
+{
+length
+height
+brand_picture
+}
+
+class zona_prezentare
+{
+length
+height
+text
+}
+
+class zona_descriere
+{
+length
+height
+text
+}
+
+class fereastra_cookie
+{
+length
+height
+text
+buton_accept
+buton_refuse
+setcookies()
+notsetcookies()
+}
+
+class buton_menu
+{
+length
+height
+label
+status
+expand_when_clicked()
+close_when_click_elsewhere()
+}
+
+class categorie_menu
+{
+length
+width
+label
+expand_when_hover()
+}
+
+class mini_menu
+{
+label_mini_menu
+picture
+}
+
+class menu
+{
+length
+height
+symbol
+expand_when_clicked()
+}
+
+class caseta_search
+{
+length
+height
+text
+search_symbol
+accept_input()
+search_in_app()
+}
+
+class chenar_functionalitati_prezentare
+{
+picture
+label
+}
 
 
 @enduml
