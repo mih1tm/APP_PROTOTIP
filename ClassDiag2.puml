@@ -23,6 +23,9 @@ class caseta_username
 class caseta_password
 class buton_login_cont
 
+'hidden
+buton_login ---down[hidden] fereastra_login
+
 landingpage "1" *--- "1..*" chenar_functionalitati_prezentare
 landingpage .up. fereastra_cookie
 landingpage "1" *-down- "1" zona_numele_aplicatiei
