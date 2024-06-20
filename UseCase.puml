@@ -12,9 +12,9 @@ user --> (afiseaza meniul va glisa in jos) : Click pe menu
 
 user --> (afiseaza subcategorie meniu) : hovermouse pe item din listaMenu
 
-user --> (se activeaza caseta search)
+user --> (se activeaza caseta \n search)
 
-user --> (app verifica formatul sirului de caractere care trebuie sa aiba urmatorul format xxxxxxxx@gmail.com) : tasteaza in casuta de email
+user --> (app verifica formatul sirului de caractere \n care trebuie sa aiba urmatorul format xxxxxxxx@gmail.com) : tasteaza in casuta de email
 
 
 
